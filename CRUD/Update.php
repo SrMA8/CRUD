@@ -1,8 +1,6 @@
 <?php
 include("conexion.php");
 
-// ======== SI SE PRESIONÓ EL BOTÓN ACTUALIZAR ========
-// (AQUÍ COMIENZA LA PARTE UPDATE - ACTUALIZAR)
 
 if(isset($_POST['actualizar'])){
 
@@ -24,8 +22,7 @@ if(isset($_POST['actualizar'])){
     header("Location: index.php");
 }
 
-// ======== SI VIENE DESDE EDITAR ========
-// (AQUÍ COMIENZA LA PARTE DE MOSTRAR DATOS)
+
 
 $id = $_GET['id'];
 
@@ -34,7 +31,7 @@ $resultado = mysqli_query($conexion, $sql);
 $fila = mysqli_fetch_assoc($resultado);
 ?>
 
-<!-- ======== FORMULARIO PARA EDITAR ======== -->
+
 
 <form action="Update.php" method="POST">
 
@@ -55,3 +52,5 @@ $fila = mysqli_fetch_assoc($resultado);
 <button type="submit" name="actualizar">Actualizar</button>
 
 </form>
+
+
