@@ -15,7 +15,13 @@ $resultado = mysqli_query($conexion, $sql);
 <th>Acciones</th>
 </tr>
 
-
+<?php while($fila = mysqli_fetch_assoc($resultado)){ ?>
+<tr>
+<td><?php echo $fila['id']; ?></td>
+<td><?php echo $fila['nombres']; ?></td>
+<td><?php echo $fila['apellidos']; ?></td>
+<td><?php echo $fila['edad']; ?></td>
+<td><?php echo $fila['correo']; ?></td>
 
 
 <?php } ?>
