@@ -1,8 +1,6 @@
 <?php
 include("conexion.php");
 
-// ======== SI SE PRESIONÓ EL BOTÓN ACTUALIZAR ========
-// (AQUÍ COMIENZA LA PARTE UPDATE - ACTUALIZAR)
 
 if(isset($_POST['actualizar'])){
 
@@ -24,8 +22,7 @@ if(isset($_POST['actualizar'])){
     header("Location: index.php");
 }
 
-// ======== SI VIENE DESDE EDITAR ========
-// (AQUÍ COMIENZA LA PARTE DE MOSTRAR DATOS)
+
 
 $id = $_GET['id'];
 
@@ -55,3 +52,4 @@ $fila = mysqli_fetch_assoc($resultado);
 <button type="submit" name="actualizar">Actualizar</button>
 
 </form>
+
