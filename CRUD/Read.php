@@ -23,7 +23,12 @@ $resultado = mysqli_query($conexion, $sql);
 <td><?php echo $fila['edad']; ?></td>
 <td><?php echo $fila['correo']; ?></td>
 
+<td>
+<a href="editar.php?id=<?php echo $fila['id']; ?>">Editar</a>
+<a href="eliminar.php?id=<?php echo $fila['id']; ?>">Eliminar</a>
+</td>
 
+</tr>
 <?php } ?>
 
 </table>
