@@ -31,7 +31,7 @@ $resultado = mysqli_query($conexion, $sql);
 $fila = mysqli_fetch_assoc($resultado);
 ?>
 
-<!-- ======== FORMULARIO PARA EDITAR ======== -->
+
 
 <form action="Update.php" method="POST">
 
@@ -52,4 +52,5 @@ $fila = mysqli_fetch_assoc($resultado);
 <button type="submit" name="actualizar">Actualizar</button>
 
 </form>
+
 
